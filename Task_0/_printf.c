@@ -19,7 +19,7 @@ int _printf(const char *format, ...)
  	else if (format == "%c")
 	{
         c = va_arg(ap, int);
-        return(write(1, &c, 1));
+        return(write(1, c, 1));
     	}
 	va_end(ap);
 }
